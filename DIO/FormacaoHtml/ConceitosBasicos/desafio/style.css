@@ -129,3 +129,8 @@ a{
     border: 1px solid;
     border-collapse:collapse;
 }
+
+.form {
+    padding-left: 85px;
+}
+
