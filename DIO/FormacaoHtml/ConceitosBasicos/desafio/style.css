@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     display: flex;
     justify-content: center;
@@ -58,11 +56,24 @@ a{
 }
 
 .content {
-    display: block;
-    text-align: left;
+    display: flex;
+    text-align: center;
     background-color: white;
     min-height: 300px;
     padding: 20px;
+}
+
+.content img {
+    box-sizing: border-box;
+    text-align: right;
+    float: right;
+    margin: 0px 15px 15px 0px;
+    width: 50%;
+    border-radius: 50px;
+    padding-left: 20px;
+    pointer-events: none;
+    user-select: none;
+    box-shadow: 10px 1px 20px rgba(0,0,0,0.12), 20px 1px 20px rgba(0,0,0,0.24);
 }
 
 .footer {
