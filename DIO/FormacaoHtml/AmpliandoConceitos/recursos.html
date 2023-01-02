@@ -28,6 +28,10 @@
         pre > p{
             color: blue;
         }
+
+        canvas{
+            border: black solid 1px;
+        }
     </style>
 </head>
 <body>
@@ -79,6 +83,10 @@
     <input type="text" id="busca">
     <p id="descricao">Dessa maneira podemos pesquisar palavras e destacar no texto</p>
 
+    <br>
+
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
     <script>
         var progress = document.getElementById('progress');
         const interval = setInterval(() => {
@@ -100,6 +108,13 @@
         }
 
         search_field.addEventListener('keyup', (e) => make_search(e.target.value));
+
+
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
     </script>
 </body>
 </html>
