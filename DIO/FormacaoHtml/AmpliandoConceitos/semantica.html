@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML 5 - Estrutural</title>
+    <style>
+        nav ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        
+        nav ul li a{
+            padding: 10px 15px;
+            color: red;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover{
+            color: white;
+            background-color: blue;
+        }
+
+        blockquote{
+            background: #f5f5f5f5;
+            padding: 15px;
+            border-left: blue solid 4px;
+        }
+
+        article time{
+            font-style: italic;
+        }
+
+        blockquote q{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav> <!-- Elemento de navegação, seção da página que aponta para outras páginas ou outras áreas -->
+            <ul>
+                <li><a href="#"> Item 1</a></li>
+                <li><a href="#"> Item 2</a></li>
+                <li><a href="#"> Item 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>  <!-- O main pode user usado apenas uma vez por página, as outras tags podem ser utilizadas várias vezes -->
+        <article> <!-- Utilizado para colocar o conteudo em sí da página -->
+            <h1>Artigo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatem tenetur aliquam dolores eligendi fuga odio delectus dicta sit harum numquam ipsum, eum ipsa veniam sequi assumenda vero explicabo doloribus!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et libero iste vitae architecto aut atque suscipit deleniti. A deserunt minus maiores amet natus nostrum temporibus quisquam, qui suscipit. Quasi, laboriosam!</p>
+            <blockquote cite="http://wikipedia.org"> <!-- A tag cite permite declarar a fonte da citação -->
+                <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla unde odio cupiditate reprehenderit consectetur, recusandae molestiae nobis enim quae nemo ad eos, beatae sunt reiciendis, labore quos possimus ut rem?</q></p>
+                <!-- <q> Declara que é uma citação -->
+            </blockquote>
+            
+            <figure> <!--  Delimita o escopo de uma imagem -->
+                <img src="../ConceitosBasicos/desafio/src/principal.jpg" alt="Imagem de consultório" width="250">
+                <figcaption>Descrição da imgagem</figcaption>
+            </figure>
+            
+
+            <article> <!--  Possui relação de pai e filho entre os articles -->
+                <p>Artigo públicado em: <time pubdate>02/01/2023 13:0</time></p>
+            </article>
+        </article>
+        
+        
+        
+        <!-- 
+            <section> Seção genérica, utilizado quando não possui uma tag especifica para isso 
+            </section> 
+            <aside> Algo seperado do conteudo principal, não necessariamente possui ligação 
+            </aside> 
+        -->
+    </main>
+    
+    <footer>
+    </footer>
+</body>
+</html>
