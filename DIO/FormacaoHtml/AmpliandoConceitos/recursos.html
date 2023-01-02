@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos especiais</title>
+
+    <style>
+
+        kbd{
+            border: black solid 1px ;
+        }
+
+        code{
+            color: red;
+            background-color: #f1f1f1;
+        }
+
+        pre{
+            background: #f1f1f1;
+        }
+
+        pre > code{
+            color: red;
+        }
+
+        pre > p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <input list="browsers" type="search" name="search"> <!-- Dessa maneira exibe os dados armazenados no datalist -->
+    <datalist id="browsers">
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+        <option value="safari">Safari</option>
+        <option value="opera">Opera</option>
+    </datalist>
+
+    <!-- <select name="browser"> 
+        <option value="">Selecione um navegador</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+        <option value="safari">Safari</option>
+        <option value="opera">Opera</option>
+    </select> -->
+
+    <p>Para copiar esta informação pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p> <!-- Muda a fonte e indica que é um comando de teclado -->
+
+    <p>Para trocar o fundo de um elemento, utilize o comando <code>background-color</code></p>
+
+    <p>Comando completo de alterar cor de fundo</p>
+    
+    <pre> <!-- Coloca em formato nomespace e com borda automaticamente -->
+        <p>Explicação...</p>
+        <code>
+            code{
+                color: red;
+                background-color: lightgray;
+            }
+        </code>
+    </pre>
+
+    <details>
+        <summary>Como troco a cor de fundo?</summary> <!-- Muda o nome do detail -->
+        <p>Para executar essa ação execute o comando <code>background-color</code> no CSS</p>
+    </details>
+</body>
+</html>
