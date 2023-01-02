@@ -72,18 +72,34 @@
     </details>
 
     <meter max="100" min="0" value="50"></meter> <!-- Mostra algo estático -->
-    <progress id="progress"max="100" min="50" value="0"> <!-- Indica o carregamento de uma ação -->
-    </progress>
+    <progress id="progress"max="100" min="50" value="0"></progress> <!-- Indica o carregamento de uma ação -->
+
+    <br>
+    <br>
+    <input type="text" id="busca">
+    <p id="descricao">Dessa maneira podemos pesquisar palavras e destacar no texto</p>
 
     <script>
         var progress = document.getElementById('progress');
         const interval = setInterval(() => {
             progress.value += 10;
             if(progress.value >= 100){
-                alert('Carregamento finalizado com sucesso');
+                // alert('Carregamento finalizado com sucesso');
                 clearInterval(interval);
             }
         }, 100)
+
+        var search_field = document.getElementById('busca');
+        var description_obj = document.getElementById('descricao');
+        var text_to_search = description_obj.innerHTML;
+
+        function make_search(busca){
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`,`ig`)
+            const ocurrences = text_to_search.match(regex);
+            description_obj.innerHTML = text_to_search.replace(regex,`<mark>${busca}</mark>`)
+        }
+
+        search_field.addEventListener('keyup', (e) => make_search(e.target.value));
     </script>
 </body>
 </html>
