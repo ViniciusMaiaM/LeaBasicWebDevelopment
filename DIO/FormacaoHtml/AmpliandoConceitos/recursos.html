@@ -70,5 +70,20 @@
         <summary>Como troco a cor de fundo?</summary> <!-- Muda o nome do detail -->
         <p>Para executar essa ação execute o comando <code>background-color</code> no CSS</p>
     </details>
+
+    <meter max="100" min="0" value="50"></meter> <!-- Mostra algo estático -->
+    <progress id="progress"max="100" min="50" value="0"> <!-- Indica o carregamento de uma ação -->
+    </progress>
+
+    <script>
+        var progress = document.getElementById('progress');
+        const interval = setInterval(() => {
+            progress.value += 10;
+            if(progress.value >= 100){
+                alert('Carregamento finalizado com sucesso');
+                clearInterval(interval);
+            }
+        }, 100)
+    </script>
 </body>
 </html>
