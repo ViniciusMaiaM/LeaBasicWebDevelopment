@@ -1,7 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Epilogue', sans-serif;
+    letter-spacing: -0.5px;
 }
 
 ul { 
