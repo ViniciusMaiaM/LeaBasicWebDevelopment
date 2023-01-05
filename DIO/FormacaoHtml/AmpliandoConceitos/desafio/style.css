@@ -36,9 +36,36 @@ a {
     border-top: solid 1px #cdcdcd;
 }
 
-.anchors {
+.aside {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
+}
+
+.aside table{
+    width: 100%;
+    font-size: 88%;
+    color: black;
+    margin-top: 14px;
+    height: 65px;
+    border: 1px solid #aaa;
+    border-bottom-color: rgb(170, 170, 170);
+}
+
+.aside th{
+    text-align: center;
+    background-color: #DDDDFF;
+    vertical-align: middle;
+}
+
+.aside span{
+    background-color: #CCCCFF;
+    font-size: 120%;
+    text-align: center;
+}
+
+.aside img{
+    width: 149px;
+    height: 120px;
 }
 
 .sidebar {
