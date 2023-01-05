@@ -12,11 +12,42 @@ a {
     color:blue; text-decoration: none;
 }
 
+article h2, h1{
+    text-align: center;
+}
+
 .bar {
     background-color: #f9f9fb;
     padding:15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
+}
+
+article table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 55%;
+    height: 55%;
+    border: 1px solid #cdcdcd;
+}
+
+article table, th, td, tr{
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-collapse: collapse ;
+}
+
+article table tr:nth-child(even){background-color: #f2f2f2;}
+
+article table tr:hover {background-color: #ddd;}
+
+article table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #CCCCFF;
+    color: black;
 }
 
 .content {
@@ -38,16 +69,19 @@ a {
 
 .aside {
     border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .aside table{
     width: 100%;
     font-size: 88%;
     color: black;
-    margin-top: 14px;
+    padding-bottom: 10px;
     height: 65px;
     border: 1px solid #aaa;
+    border-collapse: collapse;
     border-bottom-color: rgb(170, 170, 170);
 }
 
@@ -68,8 +102,18 @@ a {
     height: 120px;
 }
 
+.name{
+    background-color: #EEEEFF; 
+    font-weight: lighter;
+}
+
 .sidebar {
     border-right: solid 1px #cdcdcd;
+}
+
+.singing{
+    width: 350px;
+    height: 450px;
 }
 
 figure {
