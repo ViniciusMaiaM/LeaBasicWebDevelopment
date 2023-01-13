@@ -1,6 +1,8 @@
 @import url('reset.css');
 
 body{
+    display: flex;
+    flex-direction: column;
     background-color: black;
 }
 
@@ -83,4 +85,29 @@ p{
 
 .banner button:hover{
     transition: transform 0.3s;
+}
+
+#course-content{
+    width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+#course-content .modules-list{
+    margin: 24px 0;
+}
+
+#course-content .modules-list .module{
+    color: white;
+    width: 535px;
+    margin: 0 auto 24px;
+    padding: 16px;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    background-color: #252525;
+    box-shadow: inset -2px 6px 4px rgba(0, 0, 0, .5);
+}
+
+#course-content .modules-list .module span{
+    color: #33A8DB;
 }
