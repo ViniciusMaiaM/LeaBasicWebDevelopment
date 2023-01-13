@@ -115,6 +115,15 @@ section{
     box-shadow: inset -2px 6px 4px rgba(0, 0, 0, .5);
 }
 
+#course-content .modules-list .module:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+#course-content .modules-list .module{
+    transition: transform 0.3s;
+}
+
 #course-content .modules-list .module span{
     color: #33A8DB;
 }
