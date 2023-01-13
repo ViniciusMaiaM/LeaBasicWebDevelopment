@@ -1,15 +1,15 @@
 @import url('reset.css');
 
 body{
-    display: flex;
-    flex-direction: column;
     background-color: black;
 }
 
 h2{
+    font-size: 32px;
     color: #33A8DB;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 24px;
 }
 
 p{
@@ -90,7 +90,7 @@ p{
 #course-content{
     width: 800px;
     text-align: center;
-    margin: auto;
+    margin: 118px auto;
 }
 
 #course-content .modules-list{
@@ -110,4 +110,24 @@ p{
 
 #course-content .modules-list .module span{
     color: #33A8DB;
+}
+
+#transform-world{
+    height: 560px;
+    background-size: cover;
+    background-image: url(../images/woman-code.png);
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    display: flex;
+    align-items: center;
+    padding: 200px;
+}
+
+#transform-world p{
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
 }
