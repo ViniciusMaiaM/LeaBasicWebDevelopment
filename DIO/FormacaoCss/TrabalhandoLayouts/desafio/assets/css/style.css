@@ -2,6 +2,9 @@
 
 body{
     background-color: #F9F9F9;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 header{
@@ -41,9 +44,10 @@ header{
 }
 
 main{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 1.5rem 1.5rem 12rem 3rem;
+    padding: 1.5rem 0rem 1.5rem .8rem;
     gap: 1rem;
 }
 
@@ -66,7 +70,7 @@ main{
     align-items: center;
 }
 
-.watch .video-actions .channel{
+.watch .video-actions .chanel{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -74,13 +78,13 @@ main{
     gap: 1rem;
 }
 
-.watch .video-actions .channel-info p{
+.watch .video-actions .chanel-info p{
     color: #000000;
     font-weight: 600;
     line-height: 16.41px
 }
 
-.watch .video-actions .channel-info span{
+.watch .video-actions .chanel-info span{
     color: #515151;
     font-weight: 400;
 
@@ -116,5 +120,34 @@ main{
 
 .watch .info .description{
     font-weight: 400;
+    color: #515151;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.secondary{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar .secondary-info{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    margin-left: .9rem;
+}
+
+.sidebar .secondary-info .title-video{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.sidebar .secondary-info .title-chanel{
+    font-weight: 400;
+    font-size: 14px;
     color: #515151;
 }
